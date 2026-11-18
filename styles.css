@@ -65,6 +65,7 @@ strong { color: var(--texto); font-weight: 600; }
   background: linear-gradient(135deg, var(--verde-oscuro), var(--verde));
   box-shadow: 0 0 18px rgba(79, 214, 92, .35);
   transform: skewX(-8deg);
+  padding-right: 4px; /* la V cursiva se carga a la derecha: la recentra */
 }
 .logo__texto { font-family: var(--mono); font-size: 14px; letter-spacing: .1em; }
 .menu { display: flex; align-items: center; gap: 4px; list-style: none; margin: 0; padding: 0; }
