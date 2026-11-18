@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victor Echeverri · Desarrollador Full Stack</title>
+  <meta name="description" content="Portafolio de Victor Manuel Echeverri Osorio, Ingeniero en Sistemas y Telecomunicaciones y desarrollador Full Stack (PHP, Go, Python, JavaScript, Vue.js, PostgreSQL, MongoDB).">
+  <meta property="og:title" content="Victor Echeverri · Desarrollador Full Stack">
+  <meta property="og:description" content="Experiencia, proyectos, tecnologías y hojas de vida.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0a0c0b">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="barra" id="barra">
+    <nav class="barra__nav" aria-label="Principal">
+      <a class="logo" href="#inicio" aria-label="Inicio">
+        <span class="logo__trazo" aria-hidden="true">V</span><span class="logo__texto">/VICTOR<span class="acento">ECHEVERRI</span></span>
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="menu" id="menu">
+        <li><a href="#inicio" class="activo">Inicio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#contacto" class="menu__cta">Hablemos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <!-- ============ INICIO ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__fondo" aria-hidden="true">
+        <span class="pincel pincel--1"></span>
+        <span class="pincel pincel--2"></span>
+        <span class="pincel pincel--3"></span>
+        <span class="brillo brillo--ambar"></span>
+        <span class="brillo brillo--verde"></span>
+      </div>
+
+      <div class="contenedor hero__grid">
+        <div class="hero__texto revelar">
+          <a class="insignia" href="#contacto"><span class="punto"></span>Disponible para nuevas oportunidades</a>
+          <h1>Hola, soy<br><span class="degradado">Victor Echeverri</span></h1>
+          <p class="hero__rol"><span id="rol">Desarrollador Full Stack</span><span class="cursor" aria-hidden="true">_</span></p>
+          <p class="hero__intro">
+            Ingeniero en Sistemas y Telecomunicaciones. Construyo integraciones, APIs y aplicaciones web sobre
+            <strong>Moodle</strong> para el LMS <strong>Zajuna</strong> del SENA, una plataforma con más de
+            5 millones de usuarios. Trabajo con <strong>PHP</strong>, <strong>Go</strong>, <strong>Python</strong>,
+            <strong>JavaScript</strong> y <strong>Vue.js</strong>, sobre <strong>PostgreSQL</strong>,
+            <strong>MongoDB</strong> y <strong>Oracle</strong>.
+          </p>
+          <div class="hero__acciones">
+            <a class="btn btn--primario" href="#experiencia">Ver experiencia</a>
+            <div class="desplegable" id="cvMenu">
+              <button class="btn btn--secundario" aria-expanded="false" aria-controls="cvOpciones">
+                Descargar CV
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M5 21h14"/></svg>
+              </button>
+              <ul class="desplegable__lista" id="cvOpciones" hidden>
+                <li><a href="docs/CV_Victor_Echeverri_FullStack.pdf" download>
+                  <strong>CV Full Stack (ATS)</strong><small>Resumen técnico, 3 páginas</small></a></li>
+                <!-- Activar cuando exista docs/HV_Victor_Echeverri_Certificados.pdf:
+                <li><a href="docs/HV_Victor_Echeverri_Certificados.pdf" download>
+                  <strong>Hoja de vida con certificados</strong><small>Incluye certificados laborales y diplomas</small></a></li>
+                -->
+              </ul>
+            </div>
+          </div>
+          <ul class="redes" aria-label="Redes">
+            <li><a href="https://github.com/vme22" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5a3 3 0 00-1-2.5c3 0 6-1.5 6-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 00-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004.4 9.5c0 4.5 3 6 6 6a3 3 0 00-1 2.5V21"/></svg></a></li>
+            <li><a href="https://www.linkedin.com/in/victor-manuel-echeverri-osorio-8b9029239/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg></a></li>
+            <li><a href="mailto:echever22@gmail.com" aria-label="Correo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></a></li>
+          </ul>
+        </div>
+
+        <aside class="tarjeta-sistema revelar" aria-label="Resumen">
+          <span class="esquina esquina--si"></span><span class="esquina esquina--sd"></span>
+          <span class="esquina esquina--ii"></span><span class="esquina esquina--id"></span>
+          <div class="ts__cabecera">
+            <span><span class="punto"></span>Sistema · en línea</span>
+            <span class="mono" id="reloj">--:--</span>
+          </div>
+          <div class="ts__perfil">
+            <div class="ts__avatar" aria-hidden="true">VE</div>
+            <div>
+              <p class="ts__nombre">Victor M. Echeverri O.</p>
+              <p class="ts__cargo">Desarrollador Full Stack</p>
+            </div>
+          </div>
+          <dl class="ts__datos">
+            <div><dt>Experiencia</dt><dd>+2 años en desarrollo</dd></div>
+            <div><dt>Ubicación</dt><dd>Pereira, Colombia</dd></div>
+            <div><dt>Idiomas</dt><dd>Español · Inglés B1</dd></div>
+            <div><dt>Disponibilidad</dt><dd class="ok">Sí</dd></div>
+          </dl>
+          <ul class="ts__stack">
+            <li>PHP</li><li>Go</li><li>Python</li><li>JavaScript</li><li>Vue.js</li><li>PostgreSQL</li><li>MongoDB</li><li>Moodle</li>
+          </ul>
+          <p class="ts__pie mono"><span class="ok">$</span> build --prod <span class="ok">✓ compilado y listo</span></p>
+        </aside>
+      </div>
+
+      <div class="firma" aria-hidden="true"><span></span>/VICTORECHEVERRI<span></span></div>
+    </section>
+
+    <!-- ============ EXPERIENCIA ============ -->
+    <section class="seccion" id="experiencia">
+      <div class="contenedor">
+        <header class="seccion__titulo revelar">
+          <p class="etiqueta">Experiencia</p>
+          <h2>Dónde he trabajado</h2>
+        </header>
+
+        <ol class="linea">
+          <li class="linea__item revelar">
+            <div class="linea__fecha">Feb 2026 – Actualidad</div>
+            <article class="linea__tarjeta">
+              <header>
+                <h3>Desarrollador Junior Full Stack</h3>
+                <p class="linea__empresa">Servicio Nacional de Aprendizaje – SENA · Dosquebradas, Risaralda</p>
+              </header>
+              <ul>
+                <li>Desarrollé el <strong>Centro de Calificaciones</strong> del LMS Zajuna (PHP 8.2, PostgreSQL, MongoDB): vistas de actividades, calificaciones y resultados de aprendizaje con filtros, exportaciones y recordatorios por correo a los aprendices.</li>
+                <li>Integré el envío de resultados a <strong>SOFIA Plus</strong> por servicios SOAP, con estados de sincronización, reintentos automáticos y ejecución programada con <strong>systemd</strong>.</li>
+                <li>Rediseñé la sincronización PostgreSQL → MongoDB a un modelo <strong>incremental</strong> basado en el registro de actividad de Moodle: un ciclo sin cambios sobre más de 7.500 cursos se resuelve en menos de 1 segundo.</li>
+                <li>Construí un <strong>plugin local de Moodle</strong> que reemplazó las ediciones manuales del núcleo (redirecciones y navegación), para que las actualizaciones de la plataforma no rompan la integración.</li>
+                <li>Desarrollé el módulo de <strong>Lengua de Señas Colombiana a texto</strong>: reconocimiento en el navegador con MediaPipe (manos y rostro) y comparación DTW + kNN, con ingreso desde Moodle por JWT de un solo uso.</li>
+                <li>Hice auditorías de seguridad (CSRF, XSS, IDOR, redirecciones abiertas) y análisis de calidad con <strong>SonarQube</strong>, y preparé despliegues en servidores Ubuntu sin internet con paquetes verificados por SHA-256.</li>
+              </ul>
+              <ul class="chips"><li>PHP</li><li>PostgreSQL</li><li>MongoDB</li><li>SOAP</li><li>Moodle</li><li>JavaScript</li><li>MediaPipe</li><li>nginx</li><li>Docker</li></ul>
+            </article>
+          </li>
+
+          <li class="linea__item revelar">
+            <div class="linea__fecha">Feb 2025 – Dic 2025</div>
+            <article class="linea__tarjeta">
+              <header>
+                <h3>Desarrollador Junior Full Stack</h3>
+                <p class="linea__empresa">Servicio Nacional de Aprendizaje – SENA · Dosquebradas, Risaralda</p>
+              </header>
+              <ul>
+                <li>Optimicé una API crítica en un <strong>99,95 %</strong>: de 7 minutos a 0,20 segundos, al llevar consultas PL/SQL sobre tablas de millones de registros a un modelo en MongoDB.</li>
+                <li>Desarrollé e integré <strong>18 endpoints RESTful</strong> sobre Moodle para un LMS de más de 5 millones de usuarios, con validación de tokens en cada petición.</li>
+                <li>Diseñé 5 módulos backend en PHP y Go, e integré 3 en un único servicio para reducir código duplicado.</li>
+                <li>Propuse dividir el trabajo por funcionalidad (endpoint, lógica Go, componente Vue): el módulo de quizzes se entregó en la primera revisión, sin regresiones.</li>
+                <li>Ejecuté pruebas unitarias y de conectividad semanales, y análisis de vulnerabilidades con informe al equipo líder.</li>
+              </ul>
+              <ul class="chips"><li>Go</li><li>PHP</li><li>Vue.js</li><li>MongoDB</li><li>PL/SQL</li><li>Jira</li></ul>
+            </article>
+          </li>
+
+          <li class="linea__item revelar">
+            <div class="linea__fecha">Feb 2024 – Dic 2024</div>
+            <article class="linea__tarjeta">
+              <header>
+                <h3>Programador Backend</h3>
+                <p class="linea__empresa">Servicio Nacional de Aprendizaje – SENA · Dosquebradas, Risaralda</p>
+              </header>
+              <ul>
+                <li>Construí el backend del sistema <strong>IN HOUSE SENA</strong> en PHP y Go; elegí Go para el servicio de autenticación por su manejo de concurrencia con goroutines.</li>
+                <li>Diseñé APIs RESTful e integraciones con Moodle Web Services, con plugins de autenticación que validan el token antes de tocar la base de datos.</li>
+                <li>Modelé bases de datos relacionales (PL/SQL) y documentales (MongoDB) según el patrón de acceso de cada módulo.</li>
+                <li>Desplegué aplicaciones en producción y documenté el proceso para la continuidad del equipo.</li>
+              </ul>
+              <ul class="chips"><li>Go</li><li>PHP</li><li>REST</li><li>Moodle WS</li><li>Oracle</li><li>Git</li></ul>
+            </article>
+          </li>
+
+          <li class="linea__item revelar">
+            <div class="linea__fecha">Oct 2019 – Oct 2021</div>
+            <article class="linea__tarjeta">
+              <header>
+                <h3>Gestor Técnico</h3>
+                <p class="linea__empresa">Jerpo S.A.S · Pereira, Risaralda</p>
+              </header>
+              <ul>
+                <li>Resolví en promedio 50 tickets semanales de soporte de hardware y software para 70 a 150 clientes en todo el país.</li>
+                <li>Gestioné Zoho CRM para el seguimiento y la fidelización de las cuentas activas.</li>
+                <li>Administré un inventario de más de 100 referencias locales y 200 nacionales, con control de la información en bases de datos.</li>
+              </ul>
+              <ul class="chips"><li>Soporte</li><li>Zoho CRM</li><li>Bases de datos</li></ul>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PROYECTOS ============ -->
+    <section class="seccion seccion--alterna" id="proyectos">
+      <div class="contenedor">
+        <header class="seccion__titulo revelar">
+          <p class="etiqueta">Proyectos</p>
+          <h2>Cosas que he construido</h2>
+          <p class="seccion__nota">Proyectos institucionales: por acuerdos de confidencialidad no se publica el código.</p>
+        </header>
+
+        <div class="proyectos">
+          <article class="proyecto revelar">
+            <p class="proyecto__num mono">01</p>
+            <h3>Centro de Calificaciones – Zajuna</h3>
+            <p>Aplicación integrada a Moodle para que instructores consulten y gestionen actividades, calificaciones y resultados de aprendizaje, con sincronización a MongoDB y envío automático de resultados a SOFIA Plus.</p>
+            <ul class="chips"><li>PHP 8.2</li><li>PostgreSQL</li><li>MongoDB</li><li>SOAP</li><li>systemd</li></ul>
+          </article>
+
+          <article class="proyecto revelar">
+            <p class="proyecto__num mono">02</p>
+            <h3>Lengua de Señas Colombiana a texto</h3>
+            <p>Módulo que reconoce señas con la cámara y las escribe como texto, todo en el navegador: el video no sale del equipo. Incluye un banco de señas administrable con consentimientos y versiones publicadas.</p>
+            <ul class="chips"><li>JavaScript</li><li>MediaPipe</li><li>DTW + kNN</li><li>Plugin Moodle</li><li>JWT</li></ul>
+          </article>
+
+          <article class="proyecto revelar">
+            <p class="proyecto__num mono">03</p>
+            <h3>IN HOUSE SENA – LMS institucional</h3>
+            <p>Backend del sistema de gestión del aprendizaje del SENA sobre Moodle. Logro principal: una API crítica pasó de 7 minutos a 0,20 segundos al migrar su consulta de un modelo relacional a uno documental.</p>
+            <ul class="chips"><li>Go</li><li>PHP</li><li>Vue.js</li><li>MongoDB</li><li>PL/SQL</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TECNOLOGÍAS ============ -->
+    <section class="seccion" id="tecnologias">
+      <div class="contenedor">
+        <header class="seccion__titulo revelar">
+          <p class="etiqueta">Habilidades</p>
+          <h2>Tecnologías con las que trabajo</h2>
+        </header>
+      </div>
+
+      <div class="cinta" aria-hidden="true">
+        <div class="cinta__pista">
+          <span>PHP</span><span>Go</span><span>Python</span><span>JavaScript</span><span>Vue.js</span><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span><span>Oracle</span><span>Moodle</span><span>Docker</span><span>nginx</span><span>Git</span><span>Linux</span>
+          <span>PHP</span><span>Go</span><span>Python</span><span>JavaScript</span><span>Vue.js</span><span>Node.js</span><span>PostgreSQL</span><span>MongoDB</span><span>Oracle</span><span>Moodle</span><span>Docker</span><span>nginx</span><span>Git</span><span>Linux</span>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <div class="grupos">
+          <div class="grupo revelar"><h3>Backend</h3><p>PHP, Go, Python, Java, Node.js (Express)</p></div>
+          <div class="grupo revelar"><h3>Frontend</h3><p>JavaScript (ES6+), Vue.js, HTML5, CSS3, DataTables</p></div>
+          <div class="grupo revelar"><h3>Bases de datos</h3><p>PostgreSQL, MongoDB, Oracle PL/SQL, MySQL</p></div>
+          <div class="grupo revelar"><h3>APIs e integración</h3><p>REST, SOAP, GraphQL, Moodle Web Services, JWT</p></div>
+          <div class="grupo revelar"><h3>Infraestructura</h3><p>Linux (Ubuntu), nginx, PHP-FPM, systemd, Docker</p></div>
+          <div class="grupo revelar"><h3>Calidad y equipo</h3><p>Pruebas unitarias e integración, SonarQube, Git, Jira, documentación técnica</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE MÍ ============ -->
+    <section class="seccion seccion--alterna" id="sobre-mi">
+      <div class="contenedor sobre">
+        <div class="revelar">
+          <p class="etiqueta">Sobre mí</p>
+          <h2>¿Quién soy y qué hago?</h2>
+          <p>Soy Victor Manuel Echeverri Osorio, Ingeniero en Sistemas y Telecomunicaciones de la Universidad Católica de Pereira. Me gusta entender un problema de punta a punta: desde la consulta que tarda demasiado hasta la vista que usa el instructor o la configuración del servidor donde todo corre.</p>
+          <p>Desde 2024 desarrollo para el SENA soluciones sobre Zajuna: integraciones con Moodle y SOFIA Plus, sincronizaciones de datos, plugins y módulos nuevos como el reconocimiento de lengua de señas. Le doy mucha importancia a la seguridad, a las pruebas y a dejar documentado lo que construyo para que el equipo pueda continuar.</p>
+          <div class="estudios">
+            <div><strong>Ingeniería en Sistemas y Telecomunicaciones</strong><span>Universidad Católica de Pereira · 2017 – 2021</span></div>
+            <div><strong>Técnico en Sistemas</strong><span>INEM Felipe Pérez / SENA · 2015 – 2016</span></div>
+          </div>
+        </div>
+        <div class="cifras revelar">
+          <div class="cifra"><span class="cifra__valor">+2</span><span class="cifra__texto">Años de desarrollo</span></div>
+          <div class="cifra"><span class="cifra__valor">99,95&nbsp;%</span><span class="cifra__texto">Mejora en una API crítica</span></div>
+          <div class="cifra"><span class="cifra__valor">5M+</span><span class="cifra__texto">Usuarios en la plataforma</span></div>
+          <div class="cifra"><span class="cifra__valor">18</span><span class="cifra__texto">Endpoints REST integrados</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACTO ============ -->
+    <section class="seccion" id="contacto">
+      <div class="contenedor contacto">
+        <header class="seccion__titulo revelar">
+          <p class="etiqueta">Contacto</p>
+          <h2>¿Hablamos?</h2>
+          <p class="seccion__nota">Estoy disponible para nuevas oportunidades. Toca un dato para copiarlo.</p>
+        </header>
+        <div class="contacto__grid">
+          <button class="dato revelar" data-copiar="echever22@gmail.com">
+            <span class="dato__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="M3 7l9 6 9-6"/></svg></span>
+            <span class="dato__texto"><small>Correo</small>echever22@gmail.com</span>
+            <span class="dato__accion">Copiar</span>
+          </button>
+          <button class="dato revelar" data-copiar="+57 314 486 7991">
+            <span class="dato__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-3 2a11 11 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></span>
+            <span class="dato__texto"><small>Teléfono / WhatsApp</small>+57 314 486 7991</span>
+            <span class="dato__accion">Copiar</span>
+          </button>
+          <a class="dato revelar" href="https://www.linkedin.com/in/victor-manuel-echeverri-osorio-8b9029239/" target="_blank" rel="noopener">
+            <span class="dato__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 014 0v4M12 10v7"/></svg></span>
+            <span class="dato__texto"><small>LinkedIn</small>victor-manuel-echeverri-osorio</span>
+            <span class="dato__accion">Abrir ↗</span>
+          </a>
+          <a class="dato revelar" href="https://github.com/vme22" target="_blank" rel="noopener">
+            <span class="dato__icono" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5a3 3 0 00-1-2.5c3 0 6-1.5 6-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1-.3-3.4 1.3a11.6 11.6 0 00-6 0C6.8 2.8 5.8 3.1 5.8 3.1a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004.4 9.5c0 4.5 3 6 6 6a3 3 0 00-1 2.5V21"/></svg></span>
+            <span class="dato__texto"><small>GitHub</small>github.com/vme22</span>
+            <span class="dato__accion">Abrir ↗</span>
+          </a>
+        </div>
+        <div class="contacto__acciones revelar">
+          <a class="btn btn--primario" href="mailto:echever22@gmail.com">Escribir un correo</a>
+          <a class="btn btn--secundario" href="https://wa.me/573144867991" target="_blank" rel="noopener">Abrir WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__fila">
+      <span class="logo__texto">/VICTOR<span class="acento">ECHEVERRI</span></span>
+      <span>Desarrollador Full Stack · Pereira, Colombia · <a href="https://github.com/vme22" target="_blank" rel="noopener">GitHub</a> · <a href="https://www.linkedin.com/in/victor-manuel-echeverri-osorio-8b9029239/" target="_blank" rel="noopener">LinkedIn</a></span>
+      <span>© <span id="anio">2026</span> Victor Manuel Echeverri Osorio</span>
+    </div>
+  </footer>
+
+  <div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+  <script src="main.js" defer></script>
+</body>
+</html>
