@@ -50,7 +50,7 @@
   }
 
   // Rol que se escribe solo
-  const roles = ['Desarrollador Full Stack', 'Backend · PHP · Go · Python', 'Integraciones Moodle y APIs', 'Ingeniero en Sistemas'];
+  const roles = ['Desarrollador Full Stack', 'Backend · PHP · Go · Node.js', 'Integraciones Moodle y APIs', 'Ingeniero en Sistemas'];
   const rol = $('#rol');
   if (!reducido) {
     let r = 0, c = roles[0].length, borrando = true;
